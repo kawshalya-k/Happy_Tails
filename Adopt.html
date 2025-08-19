@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title> Adopt </title>
+        <link rel="StyleSheet" href="StyleSheet.css">
+        <script src="JavaScript.js" defer> </script>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1 class="main-heading"> <a href = "Home.html"> Happy <br> Tails </a> </h1>
+            <nav class="nav-bar">
+                <ul>
+                    <li> <a href="Home.html"> <b> Home </b></a> </li>
+                    <li> <a href="Meet the Pups.html"> <b> Meet the Pups </b></a></li>
+                    <li> <a href="Contact.html"> <b> Contact </b></a></li>
+                    <li> <a href="Adopt.html" class="active"> <b> Adopt </b></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="accounts">
+
+            <form action="submit_url" method="POST" id="login">
+
+                <label for="login-username"> Usename: </label>
+                <input type="text" id="login-username" name="username" class="input" required>
+
+                <label for="login-password"> Password: </label>
+                <input type="password" id="login-password" name="password" class="input" required>
+
+                <button> Login </button>
+
+                <p> Don't have an account? Sign up <a href="#" onclick="showSignup()">here</a>. </p>
+
+            </form>
+
+            <form action="submit_url" method="POST" id="signup">
+
+                <label for="email"> E-mail: </label>
+                <input type="email" id="email" name="email" class="input" required>
+
+                <label for="signup-username"> Usename: </label>
+                <input type="text" id="signup-username" name="username" class="input" required>
+
+                <label for="signup-password"> Password: </label>
+                <input type="password" id="signup-password" name="password" class="input" required>
+
+                <button> Sign Up </button>
+
+                <p> Already have an account? Login <a href="#" onclick="showLogin()">here</a>. </p>
+               
+            </form>
+
+        </div>
+
+        <div id="MessageBox" class="MessageBox">
+            <p id="MessageText" class="MessageText"></p>
+            <button id="Ok" class="Ok_Btn"> OK </button>
+        </div>
+        
+        <button id="gototop_btn" class="gototop_btn"> 
+            <img src="Pictures/Paw Print.png" class="gototop">
+        </button>
+
+    <br> 
+
+    <footer class="footer">
+        <nav class="nav-bar-footer">
+            <ul>
+                <li> <a href="Home.html" class="active"> <b> Home </b></a> </li>
+                <li> <a href="Meet the Pups.html"> <b> Meet the Pups </b></a></li>
+                <li> <a href="Contact.html"> <b> Contact </b></a></li>
+                <li> <a href="Adopt.html"> <b> Adopt </b></a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <h1 class="txt_info" style="color:white"> - Follow Us On - 
+                <div class="flexbox_1">
+                    <img src="Pictures/Logos/Facebook.png" class="logo">
+                    <img src="Pictures/Logos/Instagram.png" class="logo">
+                    <img src="Pictures/Logos/Twitter.png" class="logo">
+                </div>
+            </h1>
+        </div>
+    </footer>
+
+    </body>
+
+</html>
